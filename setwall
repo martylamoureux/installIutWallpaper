@@ -1,13 +1,2 @@
-#!/bin/bash
-
-# Script to randomly set Background from files in a directory
-
-# Directory Containing Pictures
-DIR="~/.iutwallpaper/wallpapers"
-
-# Command to Select a random jpg file from directory
-# Delete the *.jpg to select any file but it may return a folder
-PIC="$DIR/$1.jpg"
-
-# Command to set Background Image
-gsettings set org.gnome.desktop.background picture-uri "file://${PIC}"
+DIR="$HOME/.iutwallpaper/wallpapers/$1.jpg"
+gsettings set org.gnome.desktop.background picture-uri "file://${DIR}"
