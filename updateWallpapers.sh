@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "Copie des images"
-cp -r ~/.iutwallpaper/wallpapers
+rm -fr ~/.iutwallpaper/wallpapers/*
 cp -r wallpapers ~/.iutwallpaper/wallpapers
