@@ -1,6 +1,10 @@
 # Installation
 
-Changez le fichier parametres.txt en inscrivant votre nom et prénom : 
+Clonez ce projet avec 
+
+	$ git clone  https://github.com/martylamoureux/installIutWallpaper.git
+
+Créez le fichier parametres.txt en inscrivant votre nom, prénom et date de naissance comme ceci : 
 
     LAMOUREUX
     Marty
@@ -13,8 +17,8 @@ Changez le fichier parametres.txt en inscrivant votre nom et prénom :
 Ensuite lancez le script :
 
 	$ cd installIutWallpapers
-    $ chmod +x installerIutWallpaper.sh
-    $ ./installerIutWallpaper.sh
+    $ chmod +x install.sh
+    $ ./install.sh
 
 Pour mettre à jour le fond d'écran, placez vous dans votre dossier home ($ cd ~), et faites
 
@@ -30,4 +34,20 @@ Ceci vous récupère la dernière version des fichiers, _sans les installer !_
 
 ## Mettre à jour juste les fond d'écrans
 
-Certaines mises à jour ne mettent à jour que les fonds, pour juste mettre à jour la liste 
+Certaines mises à jour ne mettent à jour que les fonds, pour juste mettre à jour uniquement les photos, lancez le script : 
+
+ 	$ bash updateWallpapers.sh
+
+## Tout mettre à jour
+
+Pour cela il faut lancer
+
+	$ bash update.sh
+
+# Nettoyer
+
+Pour tout supprimer, lancez juste : 
+
+	$ bash clean.sh
+
+Vous n'aurez plus qu'à supprimer le dossier installIutWallpapers
